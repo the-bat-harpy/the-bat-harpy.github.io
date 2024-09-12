@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADM</title>
+    <style>
+        :root {
+            --pink: #ff5a91;
+            --light-pink: #ffd4e5;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('/images/2/ppbg.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: auto;
+        }
+
+        header {
+            width: 100%;
+            height: 60px;
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        .card {
+            width: 210px;
+            height: 254px;
+            border-radius: 4px;
+            background: var(--light-pink);
+            display: flex;
+            gap: 5px;
+            padding: .4em;
+        }
+
+        .card a {
+            height: 100%;
+            flex: 1;
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 2px;
+            transition: all .5s;
+            background: transparent;
+            border: 1px solid var(--pink);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none; /* Remove underline */
+        }
+
+        .card a:hover {
+            flex: 4;
+        }
+
+        .card a span {
+            min-width: 14em;
+            padding: .5em;
+            text-align: center;
+            transform: rotate(-90deg);
+            transition: all .5s;
+            text-transform: uppercase;
+            color: var(--pink);
+            letter-spacing: .1em;
+        }
+
+        .card a:hover span {
+            transform: rotate(0);
+        }
+
+    </style>
+</head>
+
+<body>
+    <header></header>
+
+    <div class="card">
+        <a href="/2/ADM/livros.html">
+            <span>livros</span>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="/2/ADM/cursos.html">
+            <span>cursos</span>
+        </a>
+    </div>
+
+</body>
+</html>

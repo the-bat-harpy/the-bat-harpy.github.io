@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADM-cursos</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('/images/2/adm_cursos.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: auto;
+    }
+
+    header {
+      width: 100%;
+      height: 60px;
+      background-color: transparent;
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      max-height: 90vh;
+      background-color: transparent;
+      padding: 40px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 15px;
+      color: var(--black);
+      text-align: center;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      overflow-y: auto;
+    }
+
+
+    .card {
+      width: 190px;
+      height: 254px;
+      border-radius: 20px;
+      background: #f5f5f5;
+      position: relative;
+      padding: 1.8rem;
+      border: 2px solid #c3c6ce;
+      -webkit-transition: 0.5s ease-out;
+      transition: 0.5s ease-out;
+      overflow: visible;
+    }
+
+    .card-details {
+      color: rgb(12, 72, 58);
+      height: 100%;
+      gap: .5em;
+      display: grid;
+      place-content: center;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .card-button {
+      text-decoration: none;
+      text-align: center;
+      -webkit-transform: translate(-50%, 125%);
+      -ms-transform: translate(-50%, 125%);
+      transform: translate(-50%, 125%);
+      width: 70%;
+      border-radius: 1rem;
+      border: none;
+      background-color: #b1c3ac;
+      color: #fff;
+      font-size: 1rem;
+      padding: .5rem 1rem;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      opacity: 0;
+      -webkit-transition: 0.3s ease-out;
+      transition: 0.3s ease-out;
+      cursor: pointer;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .text-body {
+      color: rgb(134, 134, 134);
+    }
+
+    /*Text*/
+    .text-title {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    /*Hover*/
+    .card:hover {
+      border-color: #6c00f8;
+      -webkit-box-shadow: 10px 5px 18px 0 rgba(255, 255, 255, 0.877);
+      box-shadow: 10px 5px 18px 0 rgba(255, 255, 255, 0.877);
+    }
+
+    .card:hover .card-button {
+      -webkit-transform: translate(-50%, 50%);
+      -ms-transform: translate(-50%, 50%);
+      transform: translate(-50%, 50%);
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <header></header>
+  <div class="container">
+
+    <div class="card">
+      <div class="card-details">
+        <p class="text-title">Getting started with SPSS</p>
+        <p class="text-body">Da open edu</p>
+      </div>
+      <a class="card-button"
+        href="https://www.open.edu/openlearn/society-politics-law/sociology/getting-started-spss/content-section-0?active-tab=description-tab">curso</a>
+    </div>
+
+    <div class="card">
+      <div class="card-details">
+        <p class="text-title">Multivariate Data Analysis in R for Research Scholars</p>
+        <p class="text-body">Da Udemy</p>
+      </div>
+      <a class="card-button"
+        href="https://www.udemy.com/course/multivariate-da-in-r-for-research-scholars-advance/">curso</a>
+    </div>
+
+    <div class="card">
+      <div class="card-details">
+        <p class="text-title">Explore Basic Statistics With IBM SPSS Statistics</p>
+        <p class="text-body">Da Udemy</p>
+      </div>
+      <a class="card-button" href="https://www.udemy.com/course/spss-statistics/">curso</a>
+    </div>
+
+  </div>
+</body>
+
+</html>
