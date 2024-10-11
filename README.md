@@ -1,4 +1,6 @@
-## Hi there 👋
+## Hi!
+This is my first personal coding project, with the sole purpose of storing and easily acessing the resources I have found that are helpful in my degree (a mixture of a comp sci degree with management).
+It's quite simple, done with HTML, CSS and some JavaScript. I do admit I had no clue what I was doing here, so the organization is somewhat strange, but it worked for what it was supposed to, so that's great in my point of view.
 
 <!--
 **the-bat-harpy/the-bat-harpy** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
