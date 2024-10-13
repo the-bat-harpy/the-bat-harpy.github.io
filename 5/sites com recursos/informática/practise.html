@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informática</title>
+    <title>Practise</title>
     <style>
         :root {
-            --dark-blue: #00008b;
-            --light-blue: #e6e6ff;
+            --pastel-green: #52b69a;
+            --light-yellow: #d9ed92;
             --white: #fff;
             --black: #000;
         }
@@ -16,7 +16,7 @@
         body {
             margin: 0;
             padding: 0;
-            background-image: url('/images/geral/dbbg.jpg');
+            background-image: url('/images/geral/daisy_wallpaper.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -27,6 +27,7 @@
             align-items: center;
             overflow: auto;
         }
+
 
         header {
             width: 100%;
@@ -61,10 +62,10 @@
             flex: 1 1 calc(25% - 20px);
             max-width: 260px;
             min-width: 180px;
-            border: 4px solid var(--dark-blue);
-            background-color: var(--light-blue);
+            border: 4px solid var(--pastel-green);
+            background-color: var(--light-yellow);
             padding: 1rem;
-            box-shadow: 8px 8px 0 var(--dark-blue);
+            box-shadow: 8px 8px 0 var(--pastel-green);
             font-family: "Arial", sans-serif;
             box-sizing: border-box;
             display: flex;
@@ -77,7 +78,7 @@
             align-items: center;
             gap: 1rem;
             margin-bottom: 1rem;
-            border-bottom: 2px solid var(--dark-blue);
+            border-bottom: 2px solid var(--pastel-green);
             padding-bottom: 1rem;
         }
 
@@ -86,7 +87,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: var(--dark-blue);
+            background-color: var(--pastel-green);
             padding: 0.5rem;
         }
 
@@ -98,7 +99,7 @@
 
         .brutalist-card__alert {
             font-weight: 900;
-            color: var(--dark-blue);
+            color: var(--pastel-green);
             font-size: 1.5rem;
             text-transform: uppercase;
         }
@@ -108,7 +109,7 @@
             color: var(--black);
             font-size: 0.9rem;
             line-height: 1.4;
-            border-bottom: 2px solid var(--dark-blue);
+            border-bottom: 2px solid var(--pastel-green);
             padding-bottom: 1rem;
             font-weight: 600;
         }
@@ -125,19 +126,19 @@
             font-size: 1rem;
             font-weight: 700;
             text-transform: uppercase;
-            border: 3px solid var(--dark-blue);
-            background-color: var(--light-blue);
-            color: var(--dark-blue);
+            border: 3px solid var(--pastel-green);
+            background-color: var(--light-yellow);
+            color: var(--pastel-purple);
             position: relative;
             transition: all 0.2s ease;
-            box-shadow: 5px 5px 0 var(--dark-blue);
+            box-shadow: 5px 5px 0 var(--pastel-green);
             overflow: hidden;
             text-decoration: none;
             margin-bottom: 1rem;
         }
 
         .brutalist-card__button--read {
-            background-color: var(--dark-blue);
+            background-color: var(--pastel-green);
             color: var(--white);
         }
 
@@ -158,15 +159,15 @@
 
         .brutalist-card__button:hover {
             transform: translate(-2px, -2px);
-            box-shadow: 7px 7px 0 var(--dark-blue);
+            box-shadow: 7px 7px 0 var(--pastel-green);
         }
 
         .brutalist-card__button--mark:hover,
         .brutalist-card__button--read:hover {
-            background-color: var(--dark-blue);
-            border-color: var(--dark-blue);
-            color: var(--white);
-            box-shadow: 7px 7px 0 var(--dark-blue);
+            background-color: var(--pastel-green);
+            border-color: var(--pastel-green);
+            color: var (--white);
+            box-shadow: 7px 7px 0 var(--pastel-green);
         }
 
         .brutalist-card__button:active {
@@ -179,64 +180,6 @@
 <body>
     <header></header>
     <div class="container">
-        <div class="brutalist-card">
-            <div class="brutalist-card__header">
-                <div class="brutalist-card__icon">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
-                        </path>
-                    </svg>
-                </div>
-                <div class="brutalist-card__alert">Linguagens</div>
-            </div>
-            <div class="brutalist-card__message">
-                o nosso futuro é ter que aprender uma linguagem inteira numa questão de semanas
-            </div>
-            <div class="brutalist-card__actions">
-                <a class="brutalist-card__button brutalist-card__button--mark"
-                    href="/5/sites com recursos/informática/linguagens.html"> Ir</a>
-            </div>
-        </div>
-        <div class="brutalist-card">
-            <div class="brutalist-card__header">
-                <div class="brutalist-card__icon">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
-                        </path>
-                    </svg>
-                </div>
-                <div class="brutalist-card__alert">Data Structures</div>
-            </div>
-            <div class="brutalist-card__message">
-                A melhor aula para faltar afinal era a mais essencial.
-            </div>
-            <div class="brutalist-card__actions">
-                <a class="brutalist-card__button brutalist-card__button--mark"
-                    href="/5/sites com recursos/informática/ds.html">GO</a>
-            </div>
-        </div>
-        <div class="brutalist-card">
-            <div class="brutalist-card__header">
-                <div class="brutalist-card__icon">
-                    <svg viewBox="0 0 24 24" xmlns="/5/sites com recursos/infomatica.html">
-                        <path
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
-                        </path>
-                    </svg>
-                </div>
-                <div class="brutalist-card__alert">Youtube</div>
-            </div>
-            <div class="brutalist-card__message">
-                A piada de que aprende-se realmente é com indianos no Youtube é tão exagerada como a de que os
-                programadores não tomam banho(atenção, disse os e não as) </div>
-            <div class="brutalist-card__actions">
-                <a class="brutalist-card__button brutalist-card__button--mark"
-                    href="/5/sites com recursos/informática/youtube.html">ir</a>
-            </div>
-
-        </div>
 
         <div class="brutalist-card">
             <div class="brutalist-card__header">
@@ -247,14 +190,34 @@
                         </path>
                     </svg>
                 </div>
-                <div class="brutalist-card__alert">Dicas</div>
+                <div class="brutalist-card__alert">leetCode</div>
             </div>
             <div class="brutalist-card__message">
-                se eu tenho que sofrer com esta tiktok fyp, garanto que não o farei sozinha.
+                O site mais conhecido para praticar
+            </div>
+            <div class="brutalist-card__actions">
+                <a class="brutalist-card__button brutalist-card__button--mark" href="https://leetcode.com"> go</a>
+            </div>
+        </div>
+
+
+        <div class="brutalist-card">
+            <div class="brutalist-card__header">
+                <div class="brutalist-card__icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="brutalist-card__alert">CodeChef</div>
+            </div>
+            <div class="brutalist-card__message">
+
             </div>
             <div class="brutalist-card__actions">
                 <a class="brutalist-card__button brutalist-card__button--mark"
-                    href="/5/sites com recursos/informática/dicas.html">GO</a>
+                    href=" https://www.codechef.com/practice#beginner-dsa"> ir</a>
             </div>
         </div>
 
@@ -267,18 +230,59 @@
                         </path>
                     </svg>
                 </div>
-                <div class="brutalist-card__alert">Practice</div>
+                <div class="brutalist-card__alert">coderByte</div>
             </div>
             <div class="brutalist-card__message">
-                Sites para praticar (quer a parte prática, quer a parte teórica)
+
             </div>
             <div class="brutalist-card__actions">
                 <a class="brutalist-card__button brutalist-card__button--mark"
-                    href="/5/sites com recursos/informática/practise.html">GO</a>
+                    href="https://coderbyte.com/challenges?utm_campaign=NewHomepage"> go</a>
             </div>
         </div>
+
+        <div class="brutalist-card">
+            <div class="brutalist-card__header">
+                <div class="brutalist-card__icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="brutalist-card__alert">examVeda</div>
+            </div>
+            <div class="brutalist-card__message">
+                Escolhas múltiplas
+            </div>
+            <div class="brutalist-card__actions">
+                <a class="brutalist-card__button brutalist-card__button--mark" href="https://www.examveda.com"> ir</a>
+            </div>
+        </div>
+
+        <div class="brutalist-card">
+            <div class="brutalist-card__header">
+                <div class="brutalist-card__icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="brutalist-card__alert">cppBuzz</div>
+            </div>
+            <div class="brutalist-card__message">
+                Escolhas múltiplas
+            </div>
+            <div class="brutalist-card__actions">
+                <a class="brutalist-card__button brutalist-card__button--mark" href="https://www.cppbuzz.com"> go</a>
+            </div>
+        </div>
+
+
 
     </div>
 </body>
 
 </html>
+https://codecrafters.io

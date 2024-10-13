@@ -20,13 +20,15 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 100vh;
+            min-height: 100vh;
+            /* Allow the body to expand as needed */
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             overflow: auto;
         }
+
 
         header {
             width: 100%;
@@ -42,7 +44,6 @@
         .container {
             width: 90%;
             max-width: 1200px;
-            max-height: 90vh;
             background-color: rgba(255, 255, 255, 0.8);
             padding: 40px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -55,7 +56,9 @@
             gap: 20px;
             justify-content: center;
             overflow-y: auto;
+            /* Retain this to allow scrolling if needed */
         }
+
 
         .brutalist-card {
             flex: 1 1 calc(25% - 20px);
@@ -348,6 +351,7 @@
                         href="https://www.open.edu/openlearn/">ir</a>
                 </div>
             </div>
+
             <div class="brutalist-card">
                 <div class="brutalist-card__header">
                     <div class="brutalist-card__icon">
@@ -375,17 +379,82 @@
                             </path>
                         </svg>
                     </div>
-                    <div class="brutalist-card__alert">web.dev</div>
+                    <div class="brutalist-card__alert">Pluralsight</div>
                 </div>
                 <div class="brutalist-card__message">
-                    da google
+                    Pagos, mas super úteis para profissionalizar.
                 </div>
                 <div class="brutalist-card__actions">
-                    <a class="brutalist-card__button brutalist-card__button--mark" href="https://web.dev">ir</a>
+                    <a class="brutalist-card__button brutalist-card__button--mark"
+                        href="https://www.pluralsight.com">Go</a>
                 </div>
             </div>
 
+            <div class="brutalist-card">
+                <div class="brutalist-card__header">
+                    <div class="brutalist-card__icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="brutalist-card__alert">Web Dev</div>
+                </div>
+                <div class="brutalist-card__message">
+                    Da Google
+                </div>
+                <div class="brutalist-card__actions">
+                    <a class="brutalist-card__button brutalist-card__button--mark"
+                        href="https://developers.google.com/web">ir</a>
+                </div>
+            </div>
+
+            <div class="brutalist-card">
+                <div class="brutalist-card__header">
+                    <div class="brutalist-card__icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="brutalist-card__alert">FreeCodeCamp</div>
+                </div>
+                <div class="brutalist-card__message">
+                    Ótimos cursos gratuitos para quem está começando
+                </div>
+                <div class="brutalist-card__actions">
+                    <a class="brutalist-card__button brutalist-card__button--mark"
+                        href="https://www.freecodecamp.org">Go</a>
+                </div>
+            </div>
+
+            <div class="brutalist-card">
+                <div class="brutalist-card__header">
+                    <div class="brutalist-card__icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="brutalist-card__alert">TheOdinProject</div>
+                </div>
+                <div class="brutalist-card__message">
+                    Resolver on your own, teaches you a lot
+                </div>
+                <div class="brutalist-card__actions">
+                    <a class="brutalist-card__button brutalist-card__button--mark"
+                        href="https://www.theodinproject.com/paths">ir</a>
+                </div>
+            </div>
+
+
         </div>
+
+
+    </div>
 </body>
 
 </html>
