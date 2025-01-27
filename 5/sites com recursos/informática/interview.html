@@ -39,7 +39,6 @@
             z-index: 10;
         }
 
-
         .container {
             width: 90%;
             max-width: 1200px;
@@ -174,6 +173,25 @@
             transform: translate(5px, 5px);
             box-shadow: none;
         }
+
+        /* Modal styling */
+        #videoModal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 20;
+        }
+
+        #videoPlayer {
+            max-width: 90%;
+            max-height: 80%;
+        }
     </style>
 </head>
 
@@ -222,7 +240,8 @@
                     onclick="playVideo('/videos/palindrone.MP4')">ir</button>
             </div>
         </div>
-        <!-- Card 2 -->
+
+        <!-- Card 3 -->
         <div class="brutalist-card">
             <div class="brutalist-card__header">
                 <div class="brutalist-card__icon">
@@ -243,7 +262,7 @@
             </div>
         </div>
 
-        <!-- Card 2 -->
+        <!-- Card 4 -->
         <div class="brutalist-card">
             <div class="brutalist-card__header">
                 <div class="brutalist-card__icon">
@@ -260,41 +279,44 @@
             </div>
             <div class="brutalist-card__actions">
                 <button class="brutalist-card__button brutalist-card__button--mark"
-                    onclick="playVideo('videos/eventloop.MP4')">ir</button>
+                    onclick="playVideo('/videos/eventloop.MP4')">ir</button>
             </div>
         </div>
-
-
-
-
-
     </div>
 
+    <!-- Modal for video -->
+    <div id="videoModal">
+        <div style="position: relative;">
+            <video id="videoPlayer" controls>
+                <source id="videoSource" type="video/mp4">
+            </video>
+            <button onclick="closeVideo()" style="position: absolute; top: 10px; right: 10px; background: white; border: none; font-size: 20px;">X</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to open modal and play the selected video
+        function playVideo(videoPath) {
+            const videoSource = document.getElementById('videoSource');
+            const videoPlayer = document.getElementById('videoPlayer');
+            const videoModal = document.getElementById('videoModal');
+
+            videoSource.src = videoPath; // Set the video source dynamically
+            videoPlayer.load(); // Load the new video
+            videoModal.style.display = 'flex'; // Show the modal
+            videoPlayer.play(); // Play the video
+        }
+
+        // Function to close the modal and stop the video
+        function closeVideo() {
+            const videoPlayer = document.getElementById('videoPlayer');
+            const videoModal = document.getElementById('videoModal');
+
+            videoPlayer.pause(); // Pause the video
+            videoPlayer.currentTime = 0; // Reset video playback
+            videoModal.style.display = 'none'; // Hide the modal
+        }
+    </script>
 </body>
 
 </html>
-
-
-<script>
-    // Function to open modal and play the selected video
-    function playVideo(videoPath) {
-        const videoSource = document.getElementById('videoSource');
-        const videoPlayer = document.getElementById('videoPlayer');
-        const videoModal = document.getElementById('videoModal');
-
-        videoSource.src = videoPath; // Set the video source dynamically
-        videoPlayer.load(); // Load the new video
-        videoModal.style.display = 'flex'; // Show the modal
-        videoPlayer.play(); // Play the video
-    }
-
-    // Function to close the modal and stop the video
-    function closeVideo() {
-        const videoPlayer = document.getElementById('videoPlayer');
-        const videoModal = document.getElementById('videoModal');
-
-        videoPlayer.pause(); // Pause the video
-        videoPlayer.currentTime = 0; // Reset video playback
-        videoModal.style.display = 'none'; // Hide the modal
-    }
-</script>
