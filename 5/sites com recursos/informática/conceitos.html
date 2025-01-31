@@ -297,66 +297,127 @@
                     onclick="playVideo('/videos/v09044g40000cse06dnog65nakmvoakg.MP4')">Go</button>
             </div>
         </div>
-        <div class="container">
-            <!-- Card 1 -->
-            <div class="brutalist-card">
-                <div class="brutalist-card__header">
-                    <div class="brutalist-card__icon">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="brutalist-card__alert">py VS JS</div>
+
+        <!-- Card 1 -->
+        <div class="brutalist-card">
+            <div class="brutalist-card__header">
+                <div class="brutalist-card__icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+                        </path>
+                    </svg>
                 </div>
-                <div class="brutalist-card__message">
-                    Python VS Javascript
-                </div>
-                <div class="brutalist-card__actions">
-                    <button class="brutalist-card__button brutalist-card__button--mark"
-                        onclick="playVideo('/videos/pyjs.MP4')">go</button>
-                </div>
+                <div class="brutalist-card__alert">py VS JS</div>
             </div>
-
-
-
-        </div>
-
-        <!-- Modal for video -->
-        <div id="videoModal">
-            <div style="position: relative;">
-                <video id="videoPlayer" controls>
-                    <source id="videoSource" type="video/mp4">
-                </video>
-                <button onclick="closeVideo()"
-                    style="position: absolute; top: 10px; right: 10px; background: white; border: none; font-size: 20px;">X</button>
+            <div class="brutalist-card__message">
+                Python VS Javascript
+            </div>
+            <div class="brutalist-card__actions">
+                <button class="brutalist-card__button brutalist-card__button--mark"
+                    onclick="playVideo('/videos/pyjs.MP4')">go</button>
             </div>
         </div>
+        <!-- Card 1 -->
+        <div class="brutalist-card">
+            <div class="brutalist-card__header">
+                <div class="brutalist-card__icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="brutalist-card__alert">CSS units</div>
+            </div>
+            <div class="brutalist-card__message">
+                px, %,rem...
+            </div>
+            <div class="brutalist-card__actions">
+                <button class="brutalist-card__button brutalist-card__button--mark"
+                    onclick="playVideo('/videos/cssunits.MP4')">ir</button>
+            </div>
+        </div>
+        <!-- Card 1 -->
+        <div class="brutalist-card">
+            <div class="brutalist-card__header">
+                <div class="brutalist-card__icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="brutalist-card__alert">B or b</div>
+            </div>
+            <div class="brutalist-card__message">
+                Boolean or boolean (baby or big boolean)
+            </div>
+            <div class="brutalist-card__actions">
+                <button class="brutalist-card__button brutalist-card__button--mark"
+                    onclick="playVideo('/videos/Bb.MP4')">ir</button>
+            </div>
+        </div>
 
-        <script>
-            // Function to open modal and play the selected video
-            function playVideo(videoPath) {
-                const videoSource = document.getElementById('videoSource');
-                const videoPlayer = document.getElementById('videoPlayer');
-                const videoModal = document.getElementById('videoModal');
+        <div class="brutalist-card">
+            <div class="brutalist-card__header">
+                <div class="brutalist-card__icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="brutalist-card__alert">Docker</div>
+            </div>
+            <div class="brutalist-card__message">
+                What is docker?
+            </div>
+            <div class="brutalist-card__actions">
+                <button class="brutalist-card__button brutalist-card__button--mark"
+                    onclick="playVideo('/videos/docker.MP4')">go</button>
+            </div>
+        </div>
 
-                videoSource.src = videoPath; // Set the video source dynamically
-                videoPlayer.load(); // Load the new video
-                videoModal.style.display = 'flex'; // Show the modal
-                videoPlayer.play(); // Play the video
-            }
 
-            // Function to close the modal and stop the video
-            function closeVideo() {
-                const videoPlayer = document.getElementById('videoPlayer');
-                const videoModal = document.getElementById('videoModal');
 
-                videoPlayer.pause(); // Pause the video
-                videoPlayer.currentTime = 0; // Reset video playback
-                videoModal.style.display = 'none'; // Hide the modal
-            }
-        </script>
+
+    </div>
+
+    <!-- Modal for video -->
+    <div id="videoModal">
+        <div style="position: relative;">
+            <video id="videoPlayer" controls>
+                <source id="videoSource" type="video/mp4">
+            </video>
+            <button onclick="closeVideo()"
+                style="position: absolute; top: 10px; right: 10px; background: white; border: none; font-size: 20px;">X</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to open modal and play the selected video
+        function playVideo(videoPath) {
+            const videoSource = document.getElementById('videoSource');
+            const videoPlayer = document.getElementById('videoPlayer');
+            const videoModal = document.getElementById('videoModal');
+
+            videoSource.src = videoPath; // Set the video source dynamically
+            videoPlayer.load(); // Load the new video
+            videoModal.style.display = 'flex'; // Show the modal
+            videoPlayer.play(); // Play the video
+        }
+
+        // Function to close the modal and stop the video
+        function closeVideo() {
+            const videoPlayer = document.getElementById('videoPlayer');
+            const videoModal = document.getElementById('videoModal');
+
+            videoPlayer.pause(); // Pause the video
+            videoPlayer.currentTime = 0; // Reset video playback
+            videoModal.style.display = 'none'; // Hide the modal
+        }
+    </script>
 </body>
 
 </html>
